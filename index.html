@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MyResumeProfile</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+	<header>
+		<h1>Shahinsah kumar</h1>
+		<img src="Shahinsah.jpg" alt="Your Photo" height="200" width="200">
+		<p>Address: #8 3rd flor, Matrix Layout, Bangalore-37</p>
+		<p>Email: shahinsahk@gmail.com</p>
+		<p>Phone: 7677667654</p>
+	</header>
+	
+	<main>
+		<section>
+			<h2>About</h2>
+			<p>An enthusiastic and ambitious job seeker who aspires to work in a challenging 
+             environment which utilizes my knowledge about programming. 
+            </p>
+            <button onclick="toggleAbout()">Show More</button>
+            <p id="more-about" style="display: none;">I am a computer science engineer
+                to develop practical solutions to real life.</p>
+		</section>
+		
+		<section>
+			<h2>Work Experience</h2>
+			<ul>
+				<li>
+					<h3>Full Stack Web Development Bootcamp</h3>
+					<p>Newton School</p>
+					<p>Date of Employment: May 2022  - Apr 2023</p>
+					<ul>
+						<li>Full Stack Web Development along with Data Structure and Algorithms and Problem-Solving.</li>
+						<li><b>Technical Stack</b> : DSA, Java, HTML, CSS, Bootstrap, JavaScript, React, Redux, Nodejs, Express JS and Mongo DB</li>
+                        <li>Worked on Rest API and Https protocols.</li>
+                        <li>Built various projects and participated in various coding competitions held by Newton School.</li>
+					</ul>
+				</li>
+				
+				<li>
+					<h3>Business Development Executive 
+                    </h3>
+					<p>Paytm Services Private Limited</p>
+					<p>Date of Employment: July 2021 - October 2021</p>
+					<ul>
+						<li>My team was awarded top 10 in pan India and my contribution played an important role to my team's target.</li>
+						<li>Roles and responsibility :- Meeting sales targets of multiple payment solutions such as QR codes, EDC/card swipe machines
+                            and point of sales software.</li>
+						
+					</ul>
+				</li>
+			</ul>
+		</section>
+		
+		<section>
+			<h2>Education</h2>
+			<ul>
+				<li>
+					<h3>Bachelor of Engineering</h3>
+					<p>East point college of engineering and technology, Bangalore</p>
+					<p>Date of Graduation: July 2022</p>
+				</li>
+			</ul>
+		</section>
+		
+		<section>
+			<h2>Skills</h2>
+			<ul>
+				<li>Computer languages :- Java, CSS, HTML, Javascript</li>
+				<li>Software Packages :- NodeJS, Mongo DB, Express JS, JQuery, React, Bootstrap</li>
+				<li>Soft Skills :- People skills, Communication Skills, Time management, Leadership, Creativity</li>
+			</ul>
+		</section>
+	</main>
+	
+	<footer>
+		<p>Copyright &copy; Shahinsah</p>
+	</footer>
+    <script>
+        function toggleAbout() {
+           var moreAbout = document.getElementById("more-about");
+           if (moreAbout.style.display === "none") {
+              moreAbout.style.display = "block";
+              document.getElementsByTagName("button")[0].innerHTML = "Show Less";
+           } else {
+              moreAbout.style.display = "none";
+              document.getElementsByTagName("button")[0].innerHTML = "Show More";
+           }
+        }
+     </script>
+</body>
+</html>
